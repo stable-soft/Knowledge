@@ -28,7 +28,8 @@
   - ※インストールした場所の`python.exe`で実行する場合は通常の環境、venvなどで特定の場所に作成された`python.exe`で実行する場合は仮想環境
   - `python.exe`の正式名称は、pythonランチャー（launcher）
 - 外部ライブラリ扱うときは、pipというパッケージ管理システムを使う
-  - pipはpythonに付属している
+  -
+   pipはpythonに付属している
   - パッケージ管理システムができること
     - pythonで作成されたパッケージを実行環境にインストール・アンインストールができる
     - パッケージを最新バージョンへアップデートができる
@@ -66,3 +67,37 @@
   - `.venv\Scripts\activate` - アクティブ化 
     - アクティブ化すると、コマンドラインの先頭に`(.venv)`が付与される
   - `.venv\Scripts\deactivate` - 無効化`(.venv)`が消えると無効化
+
+
+### 実行～パッケージリストの保存まで
+
+- pythonの実行方法
+  - 前提として仮想環境が有効化済みの環境であること
+  - コマンド`(.venv) <python仮想環境> > python <pythonのファイル> <引数>`
+
+- パッケージリストの保存方法
+  - `pip freeze > requirements.txt`で、仮想環境にインストールしているパッケージの一覧を出力することができる。
+  - `pip install -r requirements.txt`でパッケージのリストのインストールをすることができる。
+
+
+## PytonのREADME.mdのスニペット
+- vscode用
+```json
+
+{
+	"python_README": {
+		"prefix": "pyreadme",
+		"body": [
+			"${1:# プロジェクト名}",
+			"",
+			"## 実行環境構築",
+			"",
+			"- `python -m venv .venv` - 仮想環境の作成",
+			"- 仮想環境の有効化（アクティブ化）",
+			"  - `.venv\\Scripts\\activate` - windows",
+			"  - `source .venv/bin/activate` - Linux,Mac",
+			" - `pip install -r requirements.txt` - パッケージのインストール"
+		]
+	}
+}
+```
