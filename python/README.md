@@ -81,23 +81,32 @@
 
 
 ## PytonのREADME.mdのスニペット
-- vscode用
-```json
 
+- vscode用
+
+```json
 {
-	"python_README": {
-		"prefix": "pyreadme",
-		"body": [
-			"${1:# プロジェクト名}",
-			"",
-			"## 実行環境構築",
-			"",
-			"- `python -m venv .venv` - 仮想環境の作成",
-			"- 仮想環境の有効化（アクティブ化）",
-			"  - `.venv\\Scripts\\activate` - windows",
-			"  - `source .venv/bin/activate` - Linux,Mac",
-			" - `pip install -r requirements.txt` - パッケージのインストール"
-		]
-	}
+  "python_README": {
+    "prefix": "pyreadme",
+    "body": [
+      "${1:# プロジェクト名}",
+      "",
+      "## 実行環境構築",
+      "",
+      "- `python -m venv .venv` - 仮想環境の作成",
+      "- 仮想環境の有効化（アクティブ化）",
+      "  - `.venv\\Scripts\\activate` - windows",
+      "  - `source .venv/bin/activate` - Linux,Mac",
+      " - `pip install -r requirements.txt` - パッケージのインストール"
+    ]
+  }
 }
+```
+
+- vscodeの設定のmarkdownのスニペットを有効化するためには以下を設定する
+
+```json
+"[markdown]":  {
+    "editor.quickSuggestions": true
+},
 ```
