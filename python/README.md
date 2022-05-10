@@ -110,3 +110,14 @@
     "editor.quickSuggestions": true
 },
 ```
+
+---
+
+### Python関係のリンク集
+
+- Awesome Python <https://github.com/vinta/awesome-python>
+  > pythonの役立つライブラリや入門のリンク集を収録したリポジトリ pythonで何ができるかさらっと確認できる
+- 【Python】自作モジュール内でloggingする <https://qiita.com/Esfahan/items/275b0f124369ccf8cf18>
+  > ロギング方法のサンプル
+- 13 Python Snippets You Need to Know <https://builtin.com/data-science/python-code-snippets>
+  > pythonのよく使うロジックのスニペット集（英文）
