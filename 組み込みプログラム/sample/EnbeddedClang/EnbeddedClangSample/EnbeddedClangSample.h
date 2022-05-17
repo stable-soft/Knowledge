@@ -7,3 +7,10 @@
 #include <stdlib.h>
 #include <stdlib.h>
 
+/**
+ * @fn
+ * callocのサンプル関数
+ * @brief callocを用いたexample
+ * @detail 詳細な説明
+ */
+void example_calloc(void);
