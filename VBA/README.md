@@ -82,11 +82,27 @@ For i = 0 To 10
 Next i
 ```
 
-
 ## 参考
+
+---
+
+### 基礎
 
 - OfficeVBAリファレンス（公式サイト） - <https://docs.microsoft.com/ja-jp/office/vba/api/overview/>
 - チートシート - <https://qiita.com/uchiko/items/3d7a5ef3e2676c961ee2>
 - チートシート２ - <https://qiita.com/4door/items/7808489e0c69a2e58a5d>
 - VBA基礎文法最速マスター - <http://d.hatena.ne.jp/nattou_curry_2/20100129/1264787849>
 - VBA型 - <http://officetanaka.net/excel/vba/variable/03.htm>
+
+---
+
+### テクニック
+
+- VBA高速化テクニック - <http://officetanaka.net/excel/vba/speed/>
+
+---
+
+### その他
+
+- Excelマクロ（VBA）をVSCodeで編集したい - <https://kanegolabo.com/vba-edit>
+- Excelマクロをvscodeで書きたいんよね。 - <https://zenn.dev/hirony/articles/253e9d88642d16>
