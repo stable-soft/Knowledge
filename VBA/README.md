@@ -36,14 +36,14 @@
 
 ### 変数宣言
 
-```vba
+```vb
 Dim 変数名 As Long
 変数名 = 10 / 4
 ```
 
 ### プロシージャ
 
-```vba
+```vb
 Sub プロシージャ名()
     Range("A1").Value = 10
     Range("A2").Value = 20
@@ -51,17 +51,27 @@ Sub プロシージャ名()
 End Sub
 ```
 
+```vb
+Function プロシージャ名() As 戻り値の型
+    Range("A1").Value = 10
+    Range("A2").Value = 20
+    Range("A3").Value = 30
+
+    プロシージャ名 = 戻り値の型
+End Function
+```
+
 ### プロパティ
 
 - 「オブジェクト名.プロパティ名」でプロパティを取得できる。
 
-```vba
+```vb
 Range("A1").Value
 ```
 
 ### 条件文
 
-```vba
+```vb
 If isA Then
     MsgBox foo
 ElseIf isB
@@ -73,7 +83,7 @@ End If
 
 ### 繰り返し文
 
-```vba
+```vb
 For i = 0 To 10
     ~~~
     If isA Then
@@ -99,6 +109,17 @@ Next i
 ### テクニック
 
 - VBA高速化テクニック - <http://officetanaka.net/excel/vba/speed/>
+
+- 例外処理 - <https://qiita.com/fuk101/items/aa12f4934e5cc3eba296>
+
+- 独自ログ
+  - ログ出力 - <https://excel-vba.work/2020/11/02/%E3%80%90vba%E3%80%91%E3%80%90%E5%AE%8C%E5%85%A8%E7%89%88%E3%80%91%E3%83%AD%E3%82%B0%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/>
+  - ログ出力2（結構いい） - <https://nandakagoodvibes.hatenablog.com/entry/2020/11/02/004046>
+
+- 誰かが作ったVBAのtool - <https://github.com/VBA-tools>
+- ログ管理 - <https://vba-labo.rs-techdev.com/archives/1662>
+
+- VBAのコールバック方法 - <https://qiita.com/Kamo123/items/e676e0cbe6de83410980>
 
 ---
 
