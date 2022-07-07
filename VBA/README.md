@@ -10,6 +10,9 @@
   - シートモジュール → シートと一対一の関係のモジュール
   - クラスモジュール → 読んでそのままのクラスモジュール
 
+- UDF( User Defined Function ) → プロシージャはセルから独自関数として読み込むことができる。
+  - ※ただしプロパティによっては使えないモノも存在する。
+
 ## 基本文法
 
 ### コメント
@@ -69,6 +72,20 @@ End Function
 Range("A1").Value
 ```
 
+### withステートメント
+
+- オブジェクト名の記述を省略できる書き方
+
+```vb
+With Selection.Interior
+    .Pattern = xlSolid
+    .PatternColorIndex = xlAutomatic
+    .Color = 255
+    .TintAndShade = 0
+    .PatternTintAndShade = 0
+End With
+```
+
 ### 条件文
 
 ```vb
@@ -90,6 +107,15 @@ For i = 0 To 10
         Exit For
     End If
 Next i
+```
+
+```vb
+
+Dim r As Range
+For Each r In Worksheets("Sheet1").Range("A20:D40")
+    If Abs(c.Value) < 0.01 Then c.Value = 0
+Next
+
 ```
 
 ## 参考
