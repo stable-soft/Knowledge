@@ -13,6 +13,9 @@
 - UDF( User Defined Function ) → プロシージャはセルから独自関数として読み込むことができる。
   - ※ただしプロパティによっては使えないモノも存在する。
 
+- 開発環境（VBE）としては古くて使いづらい。 → VSTOアドインの方が書きやすい
+  - ※ただし現場によっては開発する環境がない
+
 ## 基本文法
 
 ### コメント
@@ -162,3 +165,6 @@ Next
 
 - Excelマクロ（VBA）をVSCodeで編集したい - <https://kanegolabo.com/vba-edit>
 - Excelマクロをvscodeで書きたいんよね。 - <https://zenn.dev/hirony/articles/253e9d88642d16>
+
+- XVBA(VscodeでVBAが編集できる拡張機能) - <https://marketplace.visualstudio.com/items?itemName=local-smart.excel-live-server>
+  - 使い方 - <https://rent-web.jp/post-89/>
